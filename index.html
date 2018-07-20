@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Saját Blog</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="d-flex flex-row justify-content-between mb-4">
+      <!--  oldal címe-->
+      <h1>Blog</h1>
+
+      <!--  modal -->
+      <div class="d-flex align-items-center">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Új bejegyzés
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Bejegyzés hozzáadása</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!--  bejegyzés címe-->
+            <div class="form-group">
+              <label for="postTitle">Cím</label>
+              <input type="text" class="form-control" id="postTitle" placeholder="Bejegyzés címe">
+            </div>
+
+            <!--  bejegyzés tartalma-->
+            <div class="form-group">
+              <label for="postBody">Tartalom</label>
+              <textarea class="form-control" id="postBody" rows="6"></textarea>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="createPost">Létrehozás</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  bejegyzések -->
+    <div class="postList">
+      <div class="mb-4">
+        <header>
+          <strong>Első bejegyzésem</strong>
+        </header>
+        <main>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum saepe aperiam aliquid ex, expedita. Voluptatem nihil non quia perspiciatis vel nisi inventore animi ut hic, ipsam, commodi. Sint expedita dolore minus incidunt laudantium porro temporibus alias
+          debitis atque, adipisci, error neque totam facere autem doloribus, eum labore? Quia neque, tempore.
+        </main>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--  saját script -->
+  <script src="scripts.js">
+  </script>
+</body>
+
+</html>
